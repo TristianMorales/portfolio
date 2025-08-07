@@ -120,7 +120,7 @@ nav {
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-                url('https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover;
+                url('images/DSC_1145.JPG')center/cover;
     text-align: center;
     color: white;
     position: relative;
@@ -605,4 +605,5 @@ footer {
 .gallery-item.hidden {
     display: none;
 }
+
 
