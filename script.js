@@ -1,56 +1,32 @@
-// Header scroll effect
-window.addEventListener('scroll', () => {
-    const header = document.getElementById('header');
-    if (window.scrollY > 100) {
-        header.classList.add('header-scrolled');
-    } else {
-        header.classList.remove('header-scrolled');
-    }
-});
+// DOM loaded
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('header-scrolled', window.scrollY > 100);
+  });
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(anchor.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
-});
+  });
 
-// Fade in animation on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
-}, observerOptions);
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-document.querySelectorAll('.fade-in').forEach(el => {
-    observer.observe(el);
-});
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Form submission
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
+  document.querySelector('.contact-form')?.addEventListener('submit', e => {
     e.preventDefault();
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    this.reset();
-});
+    alert('Thank you for your message! I’ll get back to you soon.');
+    e.target.reset();
+  });
 
-// Gallery item click effect
-document.querySelectorAll('.gallery-item').forEach(item => {
-    item.addEventListener('click', function() {
-        // You can add a lightbox or modal here
-        console.log('Gallery item clicked');
-    });
+  document.querySelectorAll('.gallery-item').forEach(item => {
+    item.addEventListener('click', () => console.log('Gallery item clicked'));
+  });
 });
