@@ -1,103 +1,74 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tristian Morales | Pixelated Mind Design Co.</title>
-  <link rel="preload" href="styles.css" as="style" />
+  <title>Contact | Pixelated Mind Design Co.</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
   <header id="header" role="banner">
-<nav class="container" role="navigation" aria-label="Main Navigation">
-  <a href="index.html" class="logo">PMDCo.</a>
-  <ul class="nav-links">
-    <li><a href="about.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+    <div class="container">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav>
+        <a href="index.html" class="logo">PMDCo.</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Visual Storytelling</h1>
-      <p>Pixelated Mind Design Co. | Photography & Creative Design</p>
-      <a href="#gallery" class="cta-button">View Portfolio</a>
-    </div>
-  </section>
-
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title fade-in">About Me</h2>
-      <div class="about-content">
-        <div class="about-text fade-in">
-          <p>I'm Tristian Morales, founder of Pixelated Mind Design Co. ...</p>
-          <p>My approach blends traditional photography with modern digital artistry ...</p>
-        </div>
-        <div class="about-image fade-in" role="img" aria-label="Portrait of Tristian Morales"></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <h2 class="section-title fade-in">Portfolio</h2>
-      <div class="gallery-grid">
-        <!-- Example with responsive, lazy-loaded image -->
-        <div class="gallery-item fade-in">
-          <img
-            src="landscape-small.jpg"
-            srcset="landscape-small.jpg 300w, landscape-medium.jpg 600w, landscape-large.jpg 1200w"
-            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            width="400" height="300"
-            loading="lazy" decoding="async"
-            alt="Landscape Photography">
-          <div class="gallery-overlay"><h3>Landscapes</h3></div>
-        </div>
-        <!-- Repeat for other items -->
-      </div>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
+  <section class="contact page-content">
     <div class="container">
       <h2 class="section-title fade-in">Get In Touch</h2>
+      <p class="contact-intro fade-in">Want to work together or have questions? I'd love to hear from you!</p>
+
       <div class="contact-content">
         <div class="contact-info fade-in">
           <h3>Let's Work Together</h3>
-          <p>I'm always excited ...</p>
+          <p>I'm always excited to collaborate on new projects and bring creative visions to life. Whether you need professional portraits, event coverage, or custom photography services, I'd love to hear from you.</p>
           <p><strong>Email:</strong> hello@pixelatedminddesign.com</p>
-          <p><strong>Phone:</strong> (555) 123‑4567</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
           <p><strong>Instagram:</strong> @PixelatedMindDesignCo</p>
           <p><strong>Facebook:</strong> @PixelatedMindDesignCo</p>
         </div>
-        <form class="contact-form fade-in" aria-label="Contact form">
+
+        <form class="contact-form fade-in">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name" required aria-required="true">
+            <input type="text" id="name" name="name" required />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" required aria-required="true">
+            <input type="email" id="email" name="email" required />
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" required aria-required="true"></textarea>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 Pixelated Mind Design Co. All rights reserved.</p>
     </div>
   </footer>
-  </body>
- </html>
+</body>
+</html>
 
 
 
