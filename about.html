@@ -5,33 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Pixelated Mind Design Co.</title>
   <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <header id="header">
-<nav class="container" role="navigation" aria-label="Main Navigation">
-  <a href="index.html" class="logo">PMDCo.</a>
-  <ul class="nav-links">
-    <li><a href="about.html">About</a></li>
-    <li><a href="portfolio.html">Portfolio</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <header id="header" role="banner">
+    <div class="container">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav>
+        <a href="index.html" class="logo">PMDCo.</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="about" id="about">
+  <section class="about page-content">
     <div class="container">
       <h2 class="section-title fade-in">About Me</h2>
       <div class="about-content">
-        <!-- Copy your about content here -->
+        <div class="about-text fade-in">
+          <p>I'm Tristian Morales, founder of Pixelated Mind Design Co. - where creative vision meets technical precision. I specialize in capturing authentic moments through both photography and innovative design solutions.</p>
+          <br>
+          <p>My approach blends traditional photography techniques with modern digital artistry, creating compelling visual narratives for brands, events, and personal milestones. Every project is an opportunity to push creative boundaries.</p>
+          <br>
+          <p>With a keen eye for detail and a passion for storytelling, I work closely with clients to understand their vision and bring it to life through powerful imagery. Whether it's a corporate event, wedding day, or personal portrait session, I'm committed to delivering exceptional results that exceed expectations.</p>
+        </div>
+        <div class="about-image fade-in"></div>
+      </div>
+      
+      <div class="skills-section fade-in">
+        <h3>Specialties</h3>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <h4>Portrait Photography</h4>
+            <p>Capturing authentic moments and genuine expressions</p>
+          </div>
+          <div class="skill-item">
+            <h4>Event Photography</h4>
+            <p>Documenting special occasions with artistic flair</p>
+          </div>
+          <div class="skill-item">
+            <h4>Digital Design</h4>
+            <p>Creative digital artistry and visual storytelling</p>
+          </div>
+          <div class="skill-item">
+            <h4>Brand Photography</h4>
+            <p>Professional imagery for businesses and marketing</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 Pixelated Mind Design Co. All rights reserved.</p>
     </div>
   </footer>
-  </body>
- </html>
+</body>
+</html>
+
 
 
