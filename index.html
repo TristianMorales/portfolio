@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | Pixelated Mind Design Co.</title>
+  <title>Home | Pixelated Mind Design Co.</title>
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
@@ -18,46 +17,63 @@
       </div>
       <nav>
         <a href="index.html" class="logo">PMDCo.</a>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="contact page-content">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Visual Storytelling</h1>
+      <p>Pixelated Mind Design Co. | Photography & Creative Design</p>
+      <a href="portfolio.html" class="cta-button">View Portfolio</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
     <div class="container">
-      <h2 class="section-title fade-in">Get In Touch</h2>
-      <p class="contact-intro fade-in">Want to work together or have questions? I'd love to hear from you!</p>
-
-      <div class="contact-content">
-        <div class="contact-info fade-in">
-          <h3>Let's Work Together</h3>
-          <p>I'm always excited to collaborate on new projects and bring creative visions to life. Whether you need professional portraits, event coverage, or custom photography services, I'd love to hear from you.</p>
-          <p><strong>Email:</strong> hello@pixelatedminddesign.com</p>
-          <p><strong>Phone:</strong> (555) 123-4567</p>
-          <p><strong>Instagram:</strong> @PixelatedMindDesignCo</p>
-          <p><strong>Facebook:</strong> @PixelatedMindDesignCo</p>
+      <h2 class="section-title fade-in">About Me</h2>
+      <div class="about-content">
+        <div class="about-text fade-in">
+          <p>I'm Tristian Morales, founder of Pixelated Mind Design Co. - where creative vision meets technical precision. I specialize in capturing authentic moments through both photography and innovative design solutions.</p>
+          <br>
+          <p>My approach blends traditional photography techniques with modern digital artistry, creating compelling visual narratives for brands, events, and personal milestones. Every project is an opportunity to push creative boundaries.</p>
         </div>
+        <div class="about-image fade-in"></div>
+      </div>
+    </div>
+  </section>
 
-        <form class="contact-form fade-in">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required />
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h2 class="section-title fade-in">Featured Work</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Landscape Photography">
+          <div class="gallery-overlay">
+            <h3>Landscapes</h3>
           </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portrait Photography">
+          <div class="gallery-overlay">
+            <h3>Portraits</h3>
           </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="gallery-item fade-in">
+          <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nature Photography">
+          <div class="gallery-overlay">
+            <h3>Nature</h3>
           </div>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
+        </div>
+      </div>
+      <div class="gallery-cta fade-in">
+        <a href="portfolio.html" class="cta-button">View Full Portfolio</a>
       </div>
     </div>
   </section>
@@ -69,6 +85,7 @@
   </footer>
 </body>
 </html>
+
 
 
 
