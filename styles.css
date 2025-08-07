@@ -124,7 +124,6 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
-    color: white;
     position: relative;
 }
 
@@ -607,6 +606,7 @@ footer {
 .gallery-item.hidden {
     display: none;
 }
+
 
 
 
