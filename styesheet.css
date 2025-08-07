@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Myriad+Pro:wght@300;400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +7,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Myriad Pro', 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #fff;
+    color: #282b2a;
+    background-color: #f5fffd;
     overflow-x: hidden;
 }
 
@@ -24,7 +26,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(245, 255, 253, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 20px 0;
@@ -32,8 +34,8 @@ header {
 }
 
 .header-scrolled {
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    background: rgba(245, 255, 253, 0.98);
+    box-shadow: 0 2px 20px rgba(40, 43, 42, 0.1);
     padding: 15px 0;
 }
 
@@ -44,9 +46,10 @@ nav {
 }
 
 .logo {
-    font-size: 24px;
+    font-family: 'Copperplate Gothic Bold', 'Impact', sans-serif;
+    font-size: 28px;
     font-weight: bold;
-    color: #000;
+    color: #282b2a;
     text-decoration: none;
     letter-spacing: -1px;
 }
@@ -59,14 +62,14 @@ nav {
 
 .nav-links a {
     text-decoration: none;
-    color: #333;
+    color: #282b2a;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav-links a:hover {
-    color: #000;
+    color: #097969;
 }
 
 .nav-links a::after {
@@ -76,7 +79,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #fdda0d;
     transition: width 0.3s ease;
 }
 
@@ -102,10 +105,13 @@ nav {
 }
 
 .hero h1 {
+    font-family: 'Copperplate Gothic Bold', 'Impact', sans-serif;
     font-size: clamp(3rem, 8vw, 6rem);
-    font-weight: 300;
+    font-weight: bold;
     margin-bottom: 20px;
     letter-spacing: -2px;
+    color: #fdda0d;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .hero p {
@@ -118,19 +124,21 @@ nav {
 .cta-button {
     display: inline-block;
     padding: 15px 40px;
-    background: transparent;
-    color: white;
+    background: #fdda0d;
+    color: #282b2a;
     text-decoration: none;
-    border: 2px solid white;
-    font-weight: 500;
+    border: 2px solid #fdda0d;
+    font-weight: 700;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'Copperplate Gothic Bold', 'Impact', sans-serif;
 }
 
 .cta-button:hover {
-    background: white;
-    color: black;
+    background: #097969;
+    border-color: #097969;
+    color: #f5fffd;
     transform: translateY(-2px);
 }
 
@@ -141,11 +149,13 @@ nav {
 }
 
 .section-title {
+    font-family: 'Copperplate Gothic Bold', 'Impact', sans-serif;
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: bold;
     margin-bottom: 60px;
     text-align: center;
     letter-spacing: -1px;
+    color: #282b2a;
 }
 
 .about-content {
@@ -158,7 +168,7 @@ nav {
 .about-text {
     font-size: 1.2rem;
     line-height: 1.8;
-    color: #666;
+    color: #282b2a;
 }
 
 .about-image {
@@ -238,12 +248,12 @@ nav {
 /* Contact Section */
 .contact {
     padding: 120px 0;
-    background: #000;
-    color: white;
+    background: #282b2a;
+    color: #f5fffd;
 }
 
 .contact .section-title {
-    color: white;
+    color: #fdda0d;
 }
 
 .contact-content {
@@ -262,7 +272,7 @@ nav {
 .contact-info p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #ccc;
+    color: #f5fffd;
     margin-bottom: 20px;
 }
 
@@ -285,9 +295,9 @@ nav {
 .form-group input,
 .form-group textarea {
     padding: 15px;
-    border: 1px solid #333;
+    border: 1px solid #097969;
     background: transparent;
-    color: white;
+    color: #f5fffd;
     font-size: 1rem;
     border-radius: 5px;
     transition: border-color 0.3s ease;
@@ -296,7 +306,7 @@ nav {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: white;
+    border-color: #fdda0d;
 }
 
 .form-group textarea {
@@ -306,28 +316,30 @@ nav {
 
 .submit-btn {
     padding: 15px 40px;
-    background: white;
-    color: black;
+    background: #fdda0d;
+    color: #282b2a;
     border: none;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-family: 'Copperplate Gothic Bold', 'Impact', sans-serif;
 }
 
 .submit-btn:hover {
-    background: #f0f0f0;
+    background: #097969;
+    color: #f5fffd;
     transform: translateY(-2px);
 }
 
 /* Footer */
 footer {
     padding: 40px 0;
-    background: #000;
-    color: #666;
+    background: #282b2a;
+    color: #097969;
     text-align: center;
-    border-top: 1px solid #333;
+    border-top: 1px solid #097969;
 }
 
 /* Animations */
