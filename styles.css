@@ -119,7 +119,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/images/DSC_1145.JPG');
+    background-image: url(/images/DSC_1145.JPG);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -606,6 +606,7 @@ footer {
 .gallery-item.hidden {
     display: none;
 }
+
 
 
 
