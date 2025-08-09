@@ -120,7 +120,7 @@ nav {
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), 
-            url(https://github.com/TristianMorales/portfolio/blob/main/images/peace2.jpg) center/cover;
+            url(https://raw.githubusercontent.com/TristianMorales/portfolio/main/images/peace2.jpg) center/cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -624,6 +624,7 @@ footer {
 .gallery-item.hidden {
     display: none;
 }
+
 
 
 
